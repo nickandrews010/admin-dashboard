@@ -56,11 +56,26 @@
 
   .sidebar {
     grid-row: 1 / 6;
+
+    display: grid;
+    grid-template-rows: 2fr repeat(20, 1fr);
+    font-size: 1.2rem;
   }
 
   .header {
     grid-column: 2 / 6;
     grid-row: 1;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  #topLine, #lineTwo {
+    border-style: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
   }
   
   .main {
